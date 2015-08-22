@@ -1,0 +1,56 @@
+nav.navbar.navbar-default(role='navigation')
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+    // Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse.navbar-ex1-collapse
+        ul.nav.navbar-nav
+            li
+                a.effect(href='#') HOME
+            li
+                a.effect(href='#') STORIES
+            li
+                a.effect(href='#') ABOUT
+        form.navbar-form.navbar-left(role='search')
+            .form-group
+                input.form-control(type='text', placeholder='Search')
+            button.btn.btn-default(type='submit') Submit
+
+            style.
+                .effect {
+                    color: black;
+                    -webkit-transition: color 2s;
+                }
+
+                .effect:hover {
+                    color: olive;
+                    -webkit-transition: color 2s;
+                }
+
+
+        ul.nav.navbar-nav.navbar-right
+            li
+                a(href='#') Some Link
+            li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | Dropdown
+                    b.caret
+                ul.dropdown-menu
+                    li
+                        a(href='#') Songs
+                    li
+                        a(href='#') My photos
+                    li
+                        a(href='#') Theories
+                    li
+                        a(href='#') Whatever
+
+
+    // /.navbar-collapse
+
+
+
