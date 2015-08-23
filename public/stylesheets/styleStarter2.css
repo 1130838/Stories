@@ -1,0 +1,57 @@
+
+.fx {
+    position: relative;
+    -Webkit-animation-name: moveForward;
+    -Webkit-animation-duration: 35s;
+    animation-fill-mode: forwards
+}
+
+@keyframes moveForward {
+    /*0%   {left:0px; top:0px;}*/
+    /*25%  { left:50px; top:0px;}*/
+    /*50%  { left:100px; top:0px;}*/
+    /*75%  { left:150px; top:0px;}*/
+    /*50% { left:200px; top:0px;}*/
+    /*100% { left:250px; top:0px;}*/
+    from {
+        left: 0px
+    }
+    to {
+        left: 230px
+    }
+}
+
+.starter-template {
+    outline: #001F00 solid thin;
+    border-radius: 5px;
+    transition: 4s ease;
+    background: url("../images/photo8.jpg") no-repeat center center fixed;
+    background-size: 1200px;
+    padding: 30px;
+}
+
+.starter-template:hover {
+    outline: #001F00 solid thin border-radius : 5 px;;
+    transition: 4s ease;
+    background: url("../images/photo7.jpg") no-repeat center center fixed;
+    background-size: 1200px;
+    background-position: 80%;
+    position: relative;
+    padding: 30px;
+}
+
+.fx2 {
+    position: relative;
+    -Webkit-animation-name: changeColor;
+    -Webkit-animation-duration: 15s;
+    animation-fill-mode: forwards
+}
+
+@keyframes changeColor {
+    from {
+        color: black;
+    }
+    to {
+        color: darkgrey;
+    }
+}
