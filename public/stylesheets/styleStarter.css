@@ -1,0 +1,29 @@
+#head {
+    background-image: image("/images/photo1.jpg");
+    color: black;
+    -webkit-transition: color 6s;
+}
+
+#head:hover {
+    color: olive;
+    -webkit-transition: color 3s;
+}
+
+
+/*#head {
+    transition: background-image 1s ease-in-out;
+    background-image:image("/images/photo1.jpg");
+}
+
+#head:hover {
+    background-image:image("photo1.jpg”);
+}*/
+
+/*
+#head {
+    transition: background-color 0.5s ease;
+    background-color: red;
+}
+#head:hover {
+    background-color: green;
+}*/
