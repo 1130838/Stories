@@ -1,13 +1,16 @@
-#head {
-    background-image: image("/images/photo1.jpg");
-    color: black;
-    -webkit-transition: color 6s;
+.fx {
+    transition: 3s ease;
+    background-image: url("../images/photo3.jpg");
+    padding: 20px;
+
 }
 
-#head:hover {
-    color: olive;
-    -webkit-transition: color 3s;
+.fx:hover {
+    transition: 3s ease;
+    background-image: url("../images/photo1.jpg");
+    padding: 20px;
 }
+
 
 
 /*#head {
