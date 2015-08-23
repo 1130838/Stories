@@ -1,71 +1,57 @@
 
+.fx {
+    position: relative;
+    -Webkit-animation-name: moveForward;
+    -Webkit-animation-duration: 35s;
+    animation-fill-mode: forwards
+}
+
+@keyframes moveForward {
+    /*0%   {left:0px; top:0px;}*/
+    /*25%  { left:50px; top:0px;}*/
+    /*50%  { left:100px; top:0px;}*/
+    /*75%  { left:150px; top:0px;}*/
+    /*50% { left:200px; top:0px;}*/
+    /*100% { left:250px; top:0px;}*/
+    from {
+        left: 0px
+    }
+    to {
+        left: 230px
+    }
+}
+
 .starter-template {
-    /*outline: #193119 solid thin;*/
+    outline: #001F00 solid thin;
     border-radius: 5px;
     transition: 4s ease;
-    /*background-image: url("../images/photo0.jpg");*/
-    background: url("../images/photo8.jpg") no-repeat center center fixed;
-
-    /*-webkit-transition: background 5s , color 2s, align 2s, text 2s;*/
+    background: url("../images/photoBlack.jpg") no-repeat center center fixed;
     background-size: 1200px;
-
-    padding: 50px;
+    padding: 30px;
 }
 
 .starter-template:hover {
-    /*outline: #193119 solid thin*/
-    border-radius : 5px;;
-    transition: 4s ease;
-
-    color: olivedrab;
-    -webkit-transition: background 5s , color 2s, align 2s, text 2s, -webkit-animation 3s;
-    background: url("../images/photo7.jpg") no-repeat center center fixed;
+    outline: #001F00 solid thin border-radius : 5 px;;
+    transition: 5s ease;
+    background: url("../images/photoStart.jpg") no-repeat center center fixed;
     background-size: 1200px;
     background-position: 80%;
     position: relative;
-
-
-
-
-    padding: 50px;
-
-    /*-webkit-animation: text 2s, moving 5s infinite;*/
-    /*animation: moving 5s infinite;*/
-
+    padding: 30px;
 }
 
-.fx {
-    -webkit-animation: moving 5s ease-out, movingBack 5s ease-out;
-    animation: movingBack 2s, moving 2s;
-    text-emphasis-color: brown;
-    animation-iteration-count: 1;
+.fx2 {
+    position: relative;
+    -Webkit-animation-name: changeColor;
+    -Webkit-animation-duration: 25s;
+    animation-fill-mode: forwards
 }
 
-.fx.hover {
-    -webkit-animation: moving, movingBack;
-    animation: movingBack 2s , moving 2s;
-    animation-iteration-count: 1;
+@keyframes changeColor {
+    from {
+        color: black;
+    }
+    to {
+        color: darkgrey;
+    }
 }
-
-
-@-webkit-keyframes moving {
-    from {-webkit-transform: translateX(0px);}
-    to {-webkit-transform: translateX(200px);}
-}
-@keyframes moving {
-    from {transform: translateX(0px);}
-    to {transform: translateX(200px);}
-}
-
-@-webkit-keyframes movingBack {
-    from {-webkit-transform: translateX(200px);}
-    to {-webkit-transform: translateX(0px);}
-}
-@keyframes movingBack {
-    from {transform: translateX(200px);}
-    to {transform: translateX(0px);}
-}
-
-
-
-
