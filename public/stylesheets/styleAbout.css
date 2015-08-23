@@ -19,6 +19,7 @@
 /*}*/
 
 .starter-template {
+
     width: 1150px;
     height: 250px;
     outline: #001F00 solid thin;
@@ -44,46 +45,55 @@
         height: 250px;
     }
 
+    25%{
+        background-color: white;
+    }
     100% {
         /*opacity: 100;*/
         width: 1150px;
         height: 250px;
+        background-color: white;
+
     }
 }
 
-.aboutText {
+.aboutText1 {
     outline: #001F00 solid thin border-radius : 5 px;;
 }
 
-.fx {
-    position: relative;
-    -Webkit-animation-name: moveForward;
-    -Webkit-animation-duration: 75s;
-    animation-fill-mode: forwards
-}
 
-@keyframes moveForward {
+/* text moving forward*/
+
+/*.fx {*/
+    /*position: relative;*/
+    /*-Webkit-animation-name: moveForward;*/
+    /*-Webkit-animation-duration: 75s;*/
+    /*animation-fill-mode: forwards*/
+/*}*/
+
+/*@keyframes moveForward {*/
     /*0%   {left:0px; top:0px;}*/
     /*25%  { left:50px; top:0px;}*/
     /*50%  { left:100px; top:0px;}*/
     /*75%  { left:150px; top:0px;}*/
     /*50% { left:200px; top:0px;}*/
     /*100% { left:250px; top:0px;}*/
-    from {
-        left: 0px
-    }
-    to {
-        left: 230px
-    }
-}
+    /*from {*/
+        /*left: 0px*/
+    /*}*/
+    /*to {*/
+        /*left: 230px*/
+    /*}*/
+/*}*/
 
-.fx2 {
+.aboutText1 {
     text-align: left;
     position: relative;
     -Webkit-animation-name: changeColor;
-    -Webkit-animation-duration: 25s;
+    -Webkit-animation-duration: 15s;
     animation-fill-mode: forwards
 }
+
 
 @keyframes changeColor {
     from {
@@ -94,9 +104,17 @@
     }
 }
 
-.aboutText{
+.aboutText2{
     padding: 20px;
     width: 1150px;
     height: 250px;
     outline: black solid thin;
+}
+
+.aboutText2 {
+    text-align: left;
+    position: relative;
+    -Webkit-animation-name: changeColor;
+    -Webkit-animation-duration: 45s;
+    animation-fill-mode: forwards
 }

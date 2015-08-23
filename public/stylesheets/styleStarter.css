@@ -35,7 +35,7 @@
     transition: 5s ease;
     background: url("../images/photoStart.jpg") no-repeat center center fixed;
     background-size: 1200px;
-    background-position: 80%;
+    background-position: 50%;
     position: relative;
     padding: 30px;
 }
